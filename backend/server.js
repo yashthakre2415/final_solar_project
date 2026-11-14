@@ -53,7 +53,7 @@ app.use(
 
 app.use('/Site',routersite);
 
-app.get('/health', (req, res) => res.json({ success: true, status: 'ok' }));
+app.get('/health', (req, res) => res.json({ success: true,message:"solar service API is running"}));
 
 // Unknown route / unhandled error handlers (JSON, never HTML)
 app.use((req, res) => res.status(404).json({ success: false, message: 'Route not found' }));
